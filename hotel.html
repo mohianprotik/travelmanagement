@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> travel website</title>
+	<link rel = "stylesheet" href="flight.css">
+	<meta name="viewport" content="width = device-width , initial-scale = 1.0">
+	<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <header>
+                <div class="container-fluid ">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                <a class="navbar-brand" href="#">TRAVELXD</a>
+                                
+                               
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                </button>
+                             
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                  <ul class="navbar-nav ml-lg-auto">
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="index.html">HOME</a>
+                                        </li>
+                                    <li class="nav-item active">
+                                      <a class="nav-link" href="#">hotel <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="flight.html">Flight </a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="log.html">LOG IN</a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="#">CONTACT</a>
+                                    </li>
+                                    
+                                    
+                                  </ul>
+                                  
+                                </div>
+                              </nav>
+                </div>
+            </header>
+    <div class = "booking-form-box">
+        
+    </div>
+    <h1 align='center'>  Hotel Booking</h1>
+    <div class = "booking-form">
+        
+        <label> Which City</label>
+        <input type="text" class= "form-control" placeholder="City or Airport">
+
+        <div class="input-grp">
+            <label>Arrival </label>
+            <input type="date" class="form-control select-date">
+        </div> 
+        <div class="input-grp">
+            <label>Return </label>
+            <input type="date" class="form-control select-date">
+        </div> 
+        <div class="input-grp">
+                <label>Adults </label>
+                <input type="number" class="form-control" value="1">
+        </div>
+        <div class="input-grp">
+                <label>Children</label>
+                <input type="number" class="form-control" value="0">
+        </div>
+        <div class="input-grp">
+                <label>Romm class </label>
+                <select class= "custom-select">
+                    <option value="1">Economy </option>
+                    <option value ="2"> Buisness</option>
+    
+
+                </select>
+        </div>
+        <div class ="input-grp">
+            <button type="button" class="btn btn-primary flight">Show </button>
+        </div>
+
+
+    </div>
+ </div>
+</body>
