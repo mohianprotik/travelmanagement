@@ -1,98 +1,250 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title> travel website</title>
-	<link rel = "stylesheet" href="flight.css">
-	<meta name="viewport" content="width = device-width , initial-scale = 1.0">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>flight_booking</title>
+
+	
+	<!-- Bootstrap -->
 	<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-  crossorigin="anonymous"></script>
+
+	<!-- Custom stlylesheet -->
+
+	<link rel = "stylesheet" href="footer.css">
+	<link rel = "stylesheet" href="navbar.css">
+	<link rel = "stylesheet" href="flight.css">
+
+
+
 </head>
+<header>
 
+		<div id ="navigation">
+	   
+		<div class="hamburger">
+		  <div class="line"></div>
+		  <div class="line"></div>
+		  <div class="line"></div>
+		</div>
+		<ul class="nav-links">
+			<li class="logo"><a href="index.html">TRAVELXD</a></li>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="tour package.html">Tour Packages</a></li>
+			<li><a href="hotel.html">Hotel</a></li>
+			<li  class="active"><a href="#">Flight</a></li>
+			<div class="dropdown">
+			  <button class="dropbtn">Other Services
+				<i class="fa fa-caret-down"></i>
+			  </button>
+			  <div class="dropdown-content">
+				<a href="#">Tour Guide</a>
+				<a href="#">Map</a>
+				
+			  </div>
+			</div> 
+			<!--<li  class= "sub-menu"><a href="#">Other Services</a>
+			  <ul>
+				<li></li><a href="#">Tour guides</a></li>
+				<li><a href="#">Map</a></li>
+			  </ul>
+			</li>-->
+			<li><a href="log.html">Log in</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		 
+		</ul>
+		</div>
+	  
+	  
+	</header>
 <body>
-        <header>
-                <div class="container-fluid ">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                                <a class="navbar-brand" href="#">TRAVELXD</a>
-                                
-                               
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                  <span class="navbar-toggler-icon"></span>
-                                </button>
-                              
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                  <ul class="navbar-nav ml-lg-auto">
-                                        <li class="nav-item">
-                                                <a class="nav-link" href="index.html">HOME</a>
-                                        </li>
-                                    <li class="nav-item active">
-                                      <a class="nav-link" href="#">FlIGHT <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                            <a class="nav-link" href="#">hotel </a>
-                                    </li>
-                                    <li class="nav-item">
-                                            <a class="nav-link" href="log.html">LOG IN</a>
-                                    </li>
-                                    <li class="nav-item">
-                                            <a class="nav-link" href="#">CONTACT</a>
-                                    </li>
-                                    
-                                    
-                                  </ul>
-                                  
-                                </div>
-                              </nav>
-                </div>
-            </header>
-          
-    <div class = "booking-form-box">
-            <h1 align='center'> Flight Booking</h1>  
-        <div class ="radio-btn">
-            <input type="radio" class="btn" name="check" checked = "checked">
-            <span>RoundTrip</span>
-            <input type="radio" class="btn" name="check"><span>One way</span>
-            <input type="radio" class="btn" name="check"><span>Multi-city</span>
-        </div>
-    </div>
-    <div class = "booking-form">
-        <label> Flying form</label>
-        <input type="text" class= "form-control" placeholder="City or Airport">
-
-        <div class="input-grp">
-            <label>Departing </label>
-            <input type="date" class="form-control select-date">
-        </div> 
-        <div class="input-grp">
-            <label>Returning </label>
-            <input type="date" class="form-control select-date">
-        </div> 
-        <div class="input-grp">
-                <label>Adults </label>
-                <input type="number" class="form-control" value="1">
-        </div>
-        <div class="input-grp">
-                <label>Children</label>
-                <input type="number" class="form-control" value="0">
-        </div>
-        <div class="input-grp">
-                <label>Travel class </label>
-                <select class= "custom-select">
-                    <option value="1">Economy Class</option>
-                    <option value ="2"> Buisness class</option>
-                </select>
-        </div>
-        <div class ="input-grp">
-            <button type="button" class="btn btn-primary flight">Show flights</button>
-        </div>
-
-
-    </div>
- </div>
+	
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+						<h1> FLIGHT BOOKING </h1>
+					<div class="booking-form">
+						<form>
+							<div class="form-group">
+								<div class="form-checkbox">
+									<label for="roundtrip">
+										<input type="radio" id="roundtrip" name="flight-type">
+										<span></span>Roundtrip
+									</label>
+									<label for="one-way">
+										<input type="radio" id="one-way" name="flight-type">
+										<span></span>One way
+									</label>
+									<label for="multi-city">
+										<input type="radio" id="multi-city" name="flight-type">
+										<span></span>Multi-City
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Flying from</span>
+										<input class="form-control" type="text" placeholder="City or airport">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Flyning to</span>
+										<input class="form-control" type="text" placeholder="City or airport">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Departing</span>
+										<input class="form-control" type="date" required>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Returning</span>
+										<input class="form-control" type="date" required>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group">
+										<span class="form-label">Adults (18+)</span>
+										<select class="form-control">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group">
+										<span class="form-label">Children (0-17)</span>
+										<select class="form-control">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-group">
+										<span class="form-label">Travel class</span>
+										<select class="form-control">
+											<option>Economy class</option>
+											<option>Business class</option>
+											<option>First class</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-btn">
+										<button class="submit-btn">Show flights</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+<footer class="ct-footer">
+		<div class="container">
+			
+			<ul class="ct-footer-list text-center-sm">
+				<li>
+					<h2 class="ct-footer-list-header">
+						Learn More
+					</h2>
+					<ul>
+						<li>
+							<a href="#">Company</a>
+						</li>
+						<li>
+							<a href="#">Clients</a>
+						</li>
+						<li>
+							<a href="#features">feature-details</a>
+						</li>
+						<li>
+							<a href = "#gallary">gallary</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2 class="ct-footer-list-header">
+						Services
+					</h2>
+					<ul>
+						<li>
+							<a href="#">tour guides</a>
+						</li>
+						<li>
+							<a href="hotel.html">Hotel</a>
+						</li>
+						<li>
+							<a href="flight.html">Flights</a>
+						</li>
+						<li>
+							<a href="#">Support US</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2 class="ct-footer-list-header">
+						Devlopment Team
+					</h2>
+					<ul>
+						<li>
+							<a href="">Thought Leadership</a>
+						</li>
+						
+						<li>
+							<a href="">DESIGNS</a>
+						</li>
+						<li>
+							<a href="">CODE</a>
+						</li>
+						<li>
+							<a href="">COORDINATION</a>
+						</li>
+					
+					</ul>
+				</li>
+			
+				<li>
+					<h2 class="ct-footer-list-header">
+						About
+					</h2>
+					<ul>
+						<li>
+							<a href="contact.html">FAQ</a>
+						</li>
+						<li>
+							<a href="">Our Board</a>
+						</li>
+					
+						<li>
+							<a href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+	</footer>
+<script src="app.js"></script>
 </body>
+</html>

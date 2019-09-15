@@ -1,95 +1,248 @@
-<!DOCTYPE html>
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
 <html>
 <head>
-	<title> travel website</title>
-	<link rel = "stylesheet" href="flight.css">
-	<meta name="viewport" content="width = device-width , initial-scale = 1.0">
-	<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-  crossorigin="anonymous"></script>
+<title>Hotel Booking</title>
+<!-- Meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel = "stylesheet" href="footer.css">
+	<link rel = "stylesheet" href="navbar.css">
+<!--
+<meta name="keywords" content="Resort Booking Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+-->
+
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+
 </head>
-
 <body>
-        <header>
-                <div class="container-fluid ">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                                <a class="navbar-brand" href="#">TRAVELXD</a>
-                                
-                               
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                  <span class="navbar-toggler-icon"></span>
-                                </button>
-                             
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                  <ul class="navbar-nav ml-lg-auto">
-                                        <li class="nav-item">
-                                                <a class="nav-link" href="index.html">HOME</a>
-                                        </li>
-                                    <li class="nav-item active">
-                                      <a class="nav-link" href="#">hotel <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                            <a class="nav-link" href="flight.html">Flight </a>
-                                    </li>
-                                    <li class="nav-item">
-                                            <a class="nav-link" href="log.html">LOG IN</a>
-                                    </li>
-                                    <li class="nav-item">
-                                            <a class="nav-link" href="#">CONTACT</a>
-                                    </li>
-                                    
-                                    
-                                  </ul>
-                                  
-                                </div>
-                              </nav>
-                </div>
-            </header>
-    <div class = "booking-form-box">
-        
-    </div>
-    <h1 align='center'>  Hotel Booking</h1>
-    <div class = "booking-form">
-        
-        <label> Which City</label>
-        <input type="text" class= "form-control" placeholder="City or Airport">
 
-        <div class="input-grp">
-            <label>Arrival </label>
-            <input type="date" class="form-control select-date">
-        </div> 
-        <div class="input-grp">
-            <label>Return </label>
-            <input type="date" class="form-control select-date">
-        </div> 
-        <div class="input-grp">
-                <label>Adults </label>
-                <input type="number" class="form-control" value="1">
-        </div>
-        <div class="input-grp">
-                <label>Children</label>
-                <input type="number" class="form-control" value="0">
-        </div>
-        <div class="input-grp">
-                <label>Romm class </label>
-                <select class= "custom-select">
-                    <option value="1">Economy </option>
-                    <option value ="2"> Buisness</option>
+	<header>
+
     
+  
+		<div id ="navigation">
+	   
+		<div class="hamburger">
+		  <div class="line"></div>
+		  <div class="line"></div>
+		  <div class="line"></div>
+		</div>
+		<ul class="nav-links">
+			<li class="logo"><a href="index.html">TRAVELXD</a></li>
+			<li ><a href="index.html">HOME</a></li>
+			<li><a href="tour package.html">Tour Packages</a></li>
+			<li class="active"><a href="#">Hotel</a></li>
+			<li><a href="flight.html">Flight</a></li>
+			<div class="dropdown">
+			  <button class="dropbtn">Other Services
+				<i class="fa fa-caret-down"></i>
+			  </button>
+			  <div class="dropdown-content">
+				<a href="#">Tour Guide</a>
+				<a href="#">Map</a>
+				
+			  </div>
+			</div> 
+		
+			<li><a href="log.html">Log in</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		 
+		</ul>
+		</div>
+	  
+	  
+	</header>
+<!--background-->
+<h1> HOTEL BOOKING</h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	<h2>Booking Now</h2>
+						<div class="book-form agileits-login">
+							<form action="#" method="post">
+								<div class="agileits_reservation_grid">
+								<div class="phone_email">
+									<div class="form-text">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										<input type="text" name="Name" placeholder="First name" required="">
+									</div> 
+								</div>
+								<div class="phone_email phone_email1">
+									<div class="form-text">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										<input type="text" name="Name" placeholder="Last name" required="">
+									</div>
+								</div>
+								
+								<div class="phone_email">
+									<div class="form-text">
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<input type="text" name="Phone no" placeholder="Phone number" required="">
+									</div> 
+								</div> 
+								<div class="phone_email phone_email1">
+									<div class="form-text">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<input type="email" name="email" placeholder="Email" required="">
+									</div>
+								</div>
+									
+								
+									<div class="span1_of_1 phone_email1">
+										<div class="book_date"> 
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+												<input  id="datepicker" name="Text" type="text" value="" placeholder="Arrival Date"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
 
-                </select>
-        </div>
-        <div class ="input-grp">
-            <button type="button" class="btn btn-primary flight">Show </button>
-        </div>
+										</div>					
+									</div>
+									<div class="span1_of_1 phone_email">
+										<div class="book_date"> 
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+												<input  id="datepicker1" name="Text" type="text" value="" placeholder="Departure Date"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
 
+										</div>					
+									</div>
+									<div class="span1_of_1">
+										<!-- start_section_room -->
+										<div class="section_room">
+											<i class="fa fa-users" aria-hidden="true"></i>
+											<select id="country" onchange="change_country(this.value)" class="frm-field required">
+												<option value="">No.of guests</option>
+												<option value="">1</option>
+												<option value="">2 </option>         
+												<option value="">3</option>
+												<option value="">4 </option>
+												<option value="">5 </option>
+												<option value="">6 </option>
+											</select>
+										</div>	
+									</div>
+									<div class="span1_of_1 phone_email1">
+										<!-- start_section_room -->
+										<div class="section_room">
+											<i class="fa fa-h-square" aria-hidden="true"></i>
+											<select id="country1" onchange="change_country(this.value)" class="frm-field required">
+												<option value="">Room Type</option>
+												<option value="">Single Room</option>
+												<option value="">Double Room </option>         
+												<option value="">Suit Room</option>
+							
+											</select>
+										</div>	
+									</div>
+									<div class="clear"></div>
+								</div> 
+								<input type="submit" value="Book Now">
+								<div class="clear"></div>
+							</form>
+						</div>
 
-    </div>
- </div>
+		</div>
+   </div>
+    
+<footer class="ct-footer">
+		<div class="container">
+			
+			<ul class="ct-footer-list text-center-sm">
+				<li>
+					<h2 class="ct-footer-list-header">
+						Learn More
+					</h2>
+					<ul>
+						<li>
+							<a href="#">Company</a>
+						</li>
+						<li>
+							<a href="#">Clients</a>
+						</li>
+						<li>
+							<a href="#features">feature-details</a>
+						</li>
+						<li>
+							<a href = "#gallary">gallary</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2 class="ct-footer-list-header">
+						Services
+					</h2>
+					<ul>
+						<li>
+							<a href="#">tour guides</a>
+						</li>
+						<li>
+							<a href="hotel.html">Hotel</a>
+						</li>
+						<li>
+							<a href="flight.html">Flights</a>
+						</li>
+						<li>
+							<a href="#">Support US</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2 class="ct-footer-list-header">
+						Devlopment Team
+					</h2>
+					<ul>
+						<li>
+							<a href="">Thought Leadership</a>
+						</li>
+						
+						<li>
+							<a href="">DESIGNS</a>
+						</li>
+						<li>
+							<a href="">CODE</a>
+						</li>
+						<li>
+							<a href="">COORDINATION</a>
+						</li>
+					
+					</ul>
+				</li>
+			
+				<li>
+					<h2 class="ct-footer-list-header">
+						About
+					</h2>
+					<ul>
+						<li>
+							<a href="contact.html">FAQ</a>
+						</li>
+						<li>
+							<a href="">Our Board</a>
+						</li>
+					
+						<li>
+							<a href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+	</footer>
+
+<script src="app.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<!-- Calendar -->
+				<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+				  <script>
+						  $(function() {
+							$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+						  });
+				  </script>
+			<!-- //Calendar -->
+			<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+			<script src="app.js"></script>
+
 </body>
+</html>
