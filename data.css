@@ -1,6 +1,12 @@
+body
+{
+    background-image:linear-gradient(rgba(45, 141, 145, 0.5),rgba(7, 48, 75, 0.5));
+}
 body > table{
   
     width: 100%;
+    
+   
   
 }
 
