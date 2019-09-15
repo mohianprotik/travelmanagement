@@ -3,7 +3,10 @@
     
   }
   body{
-    background-image:linear-gradient(rgba(45, 141, 145, 0.5),rgba(21, 48, 66, 0.5));
+    
+    background:linear-gradient(45deg, rgb(87, 87, 226) 100%, rgba(29,37,246,1) 27%, rgba(0,128,128,1) 100%);
+   
+   
   }
   
   .content-table {
@@ -14,6 +17,8 @@
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    padding-left:30px;
+    padding-right: 30px;
    
   }
   h1

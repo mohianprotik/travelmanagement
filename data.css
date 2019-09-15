@@ -1,6 +1,8 @@
 body
 {
-    background-image:linear-gradient(rgba(45, 141, 145, 0.5),rgba(7, 48, 75, 0.5));
+    
+     
+    background:linear-gradient(45deg, rgba(0,128,128,1) 45%,rgb(62, 69, 202) 55%);
 }
 body > table{
   
