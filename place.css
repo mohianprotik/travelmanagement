@@ -1,0 +1,9 @@
+tr {
+    width: 100%;
+    display: inline-table;
+    height:260px;              
+    }
+   body {
+    background:linear-gradient(45deg, rgb(157, 177, 231) 100%,rgb(7, 112, 237) 55%);
+    }
+    
