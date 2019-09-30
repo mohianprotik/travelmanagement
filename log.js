@@ -10,18 +10,30 @@ loginForm.addEventListener('submit', (e) =>
     const password = loginForm['InputPassword'].value;
 
     auth.signInWithEmailAndPassword(email,password).then(cred =>
-        {err =>{
+        
+          { 
+            console.log(cred.user);
+            if(email== 'admin@gmail.com')
+            {
+                window.location.href = "feedback.html";
+            
+            }
+            setTimeout(function(){ loginForm.reset();
+                window.location='index.html'; }, 3000);
+        
+        },err=>
+        {
             let msg;
-            switch(err.code){
+            switch(err.code)
+            {
                 case "auth/wrong-password":
-                    msg ="password is wrong.";
+                    msg = "email or password is incorrect.";
+                    loginForm.reset();
+                    console.log('112');
                     break;
             }
             alert(msg);
         }
-            console.log(cred.user);
-
-            loginForm.reset();
-            window.location='index.html';
-        })
+        );
 });
+

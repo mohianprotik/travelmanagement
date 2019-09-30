@@ -6,7 +6,8 @@
         CONTACT US
     </title>
     <link rel = "stylesheet" href="footer.css">
-	<link rel = "stylesheet" href="navbar.css">
+    <link rel = "stylesheet" href="navbar.css">
+	<link rel = "stylesheet" href="ki.css">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<link rel = "stylesheet" href="navbar.css">
 	<meta name="viewport" content="width = device-width , initial-scale = 1.0">
@@ -16,15 +17,41 @@
 </head>
 
 <body>
+      
+	<header>
+
+      <div id ="navigation">
+       
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+      
+     
+          <button type="button" class="btn btn-warning" id = "Log_out" style="display: none">Log Out</button>
+      
+      
+      
+        
+       
+      </ul>
+      </div>
+      
+      
+    </header>
+
     <br><br><br>
+    <h1 style="text-align: center">Admin</h1>
     <table class="table">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">SUbject</th>
             <th scope="col">Handle</th>
-            <th scope="col">Comment</th>
+            <th scope="col">Question</th>
 
           </tr>
         </thead>
@@ -42,5 +69,8 @@
 
       <script src="./firebase.js"></script>
       <script src="./feedback.js"></script>
+      
+
 
 </body>
+</html>

@@ -21,12 +21,13 @@ auth.onAuthStateChanged(user =>
       console.log('user logged in :',user);
       document.getElementById("Log_out").style.display = "initial";
       document.getElementById("Log_in").style.display = "none";
-
+      localStorage.setItem('logged','yes');
     }
     else{
       console.log('user logged out');
       document.getElementById("Log_out").style.display = "none";
       document.getElementById("Log_in").style.display = "block";
+      localStorage.setItem('logged','no');
     }
   })
   const logout = document.getElementById("Log_out");
