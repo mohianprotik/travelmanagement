@@ -8,6 +8,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel = "stylesheet" href="footer.css">
 <link rel = "stylesheet" href="navbar.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 
 <link href="css/style.css" rel='stylesheet' type='text/css' />
@@ -38,12 +42,14 @@
 			  </button>
 			  <div class="dropdown-content">
 				<a href="c.html">Tour Guide</a>
-				<a href="#">Map</a>
+				<a href="https://www.google.com/maps">Map</a>
 				
 			  </div>
 			</div> 
 		
-			<li><a href="log.html">Log in</a></li>
+			<li id="Log_in" class="btn btn-warning" style="max-block-size:initial"><a href="log.html">Log in</button></a></li>
+		
+                    <button type="button" class="btn btn-warning" id = "Log_out" style="display: none " >Log Out</button>
 			<li><a href="contact.html">Contact</a></li>
 		 
 		</ul>
@@ -234,8 +240,16 @@
 						  });
 				  </script>
 			<!-- //Calendar -->
-			<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-			<script src="app.js"></script>
+			
+	
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+<!-- FireBase End-->	
+<script src="app.js"></script>
+<script src ="firebase.js"></script>
 
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+			
 </body>
 </html>

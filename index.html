@@ -35,12 +35,14 @@
 			  </button>
 			  <div class="dropdown-content">
 				<a href="c.html">Tour Guide</a>
-				<a href="#">Map</a>
+				<a href="https://www.google.com/maps">Map</a>
 				
 			  </div>
 			</div> 
 		
-			<li><a href="log.html">Log in</a></li>
+			<li id="Log_in"><a href="log.html">Log in</button></a></li>
+		
+			<button type="button" class="btn btn-warning" id = "Log_out" style="display: none">Log Out</button>
 			<li><a href="contact.html">Contact</a></li>
 		 
 		</ul>
@@ -53,10 +55,10 @@
 	
 	<h1>Travel across the globe</h1>
 	<div class="input-group">
-		<input type="text" class="form-control" placeholder="search for any city">
+		<input type="text" class="form-control" placeholder="search for any city" id="search">
 
 		<div class = "input-group-append">
-		<button type = "submit" class="input-group-text btn">Search</button>
+		<button type = "submit" id='submit'  class="input-group-text " onclick="myFunction()" >Search</button>
 		</div>
 	</div>
 </section>
@@ -69,7 +71,7 @@
 			<div class="col-md-3">
 				<div class = "feature-box">
 					<div class = "feature-img" href = "#">	
-						<a href = "#"><img src ="img/2.jpg" ></a>
+						<a href = "las angels.HTML"><img src ="img/2.jpg" ></a>
 						<div class= "price">
 							<p>180$</p>
 						</div>
@@ -97,7 +99,7 @@
 			<div class="col-md-3">
 				<div class = "feature-box">
 					<div class = "feature-img">	
-						<a href="#"><img src ="img/london-eye-945497_1920.jpg"></a>
+						<a href="london.html"><img src ="img/london-eye-945497_1920.jpg"></a>
 						<div class= "price">
 							<p>280$</p>
 						</div>
@@ -123,7 +125,7 @@
 			<div class="col-md-3">
 				<div class = "feature-box">
 					<div class = "feature-img">	
-					<a href="#"><img src ="img/russia 1.jpg"></a>
+					<a href="russia.html"><img src ="img/russia 1.jpg"></a>
 						<div class= "price">
 							<p>280$</p>
 						</div>
@@ -150,7 +152,7 @@
 			<div class="col-md-3">
 				<div class = "feature-box">
 					<div class = "feature-img">	
-					<a href="#"><img src ="img/paris-1836415_1920.jpg"></a>
+					<a href="paris.html"><img src ="img/paris-1836415_1920.jpg"></a>
 						<div class= "price">
 							<p>80$</p>
 						</div>
@@ -181,7 +183,8 @@
 			<div class="col-md-3">
 				<div class = "gallary-box">
 					<div class = "feature-img">	
-						<img src ="img/losangels.jpg">
+							<a href="gallarylas.html">
+									<img  src="img/losangels2.jpg"  ></a>
 						<h4>Los angeles</h4>
 					</div>
 					
@@ -191,7 +194,8 @@
 			<div class="col-md-3">
 				<div class = "gallary-box">
 					<div class = "feature-img">	
-						<img src ="img/losangels2.jpg">
+							<a href="gallarylas.html">
+									<img  src="img/losangels3.jpg" ></a>
 						<h4>Los angeles</h4>
 					</div>
 					
@@ -201,7 +205,8 @@
 			<div class="col-md-3">
 				<div class = "gallary-box">
 					<div class = "feature-img">	
-						<img src ="img/russia 1.jpg">
+							<a href="gallarylas.html">
+									<img  src="img/losangels.jpg"  ></a>
 						<h4>Russia</h4>
 					</div>
 					
@@ -212,17 +217,8 @@
 			<div class="col-md-3">
 				<div class = "gallary-box">
 					<div class = "feature-img">	
-						<img src ="img/russia3.jpg">
-						<h4>Russia</h4>
-					</div>
-					
-				</div>
-
-			</div>
-			<div class="col-md-3">
-				<div class = "gallary-box">
-					<div class = "feature-img">	
-						<img src ="img/paris2.jpg">
+							<a href="gallaryparis.html">
+									<img  src="img/architecture-buildings-cars-2221928.jpg"  ></a>
 						<h4>Paris</h4>
 					</div>
 					
@@ -232,7 +228,19 @@
 			<div class="col-md-3">
 				<div class = "gallary-box">
 					<div class = "feature-img">	
-						<img src ="img/london3.jpg">
+							<a href="gallaryparis.html">
+									<img  src="img/paris2.jpg"  ></a>
+						<h4>Paris</h4>
+					</div>
+					
+				</div>
+
+			</div>
+			<div class="col-md-3">
+				<div class = "gallary-box">
+					<div class = "feature-img">	
+							<a href="gallarylondon.html">
+									<img  src="img/los4.jpg"  ></a>
 						<h4>London</h4>
 					</div>
 					
@@ -242,7 +250,8 @@
 			<div class="col-md-3">
 				<div class = "gallary-box">
 					<div class = "feature-img">	
-						<img src ="img/london2.jpg">
+							<a href="gallarylondon.html">
+									<img  src="img/london2.jpg"  ></a>
 						<h4>London</h4>
 					</div>
 					
@@ -253,7 +262,8 @@
 			<div class="col-md-3">
 				<div class = "gallary-box">
 					<div class = "feature-img">	
-						<img src ="img/london1.jpg">
+							<a href="gallarylondon.html">
+									<img  src="img/london1.jpg"  ></a>
 						<h4>London</h4>
 					</div>
 					
@@ -410,6 +420,14 @@
 		</div>
 </footer>
 
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+<!-- FireBase End-->	
 <script src="app.js"></script>
+<script src ="firebase.js"></script>
+
+	
+
 </body>
 </html>

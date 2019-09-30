@@ -4,55 +4,20 @@
   }
   body{
     
-    background:linear-gradient(45deg, rgb(87, 87, 226) 100%, rgba(29,37,246,1) 27%, rgba(0,128,128,1) 100%);
    
    
   }
   
-  .content-table {
-    border-collapse: collapse;
-    margin: 100px 0;
-    font-size: 0.9em;
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    padding-left:30px;
-    padding-right: 30px;
-   
+.container {
+  padding: 2rem 0rem;
+}
+
+h4 {
+  margin: 2rem 0rem 1rem;
+}
+
+.table-image {
+  td, th {
+    vertical-align: middle;
   }
-  h1
-  {
-    color: white;
-    font-size: 4em;
-    padding-top: 130px;
-  }
-  .content-table thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
-    font-weight: bold;
-  }
-  
-  .content-table th,
-  .content-table td {
-    padding: 12px 15px;
-  }
-  
-  .content-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-  }
-  
-  .content-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-  }
-  
-  .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-  }
-  
-  .content-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-  }
-  
+}

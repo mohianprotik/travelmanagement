@@ -44,7 +44,10 @@
                       </div>
                     </div> 
                   
-                    <li><a href="log.html">Log in</a></li>
+                    <li><a href="log.html"><button type="button" class="btn btn-warning" id = "Log_in" style="display: none" >Log in</button></a></li>
+		
+			<button type="button" class="btn btn-warning" id = "Log_out" style="display: none">Log Out</button>
+			
                     <li class="active"><a href="#">Contact</a></li>
                  
                 </ul>
@@ -53,53 +56,57 @@
               
             </header>
 <div><br><br><br><br><br><br><br><br>
+</div> 
+<main>
+    <div class="container contact">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="contact-info">
+                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+                    <h2>Contact Us</h2>
+                    <h4>We would love to hear from you !</h4>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="contact-form" id = "contact-form">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="name">Name:</label>
+                      <div class="col-sm-10">          
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="fname">
+                      </div>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="email">Email:</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                            <label class="control-label col-sm-2" for="subject">subject:</label>
+                            <div class="col-sm-10">          
+                              <input type="text" class="form-control" id="subject" placeholder="Enter Last Name" name="lname">
+                            </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="comment">Comment:</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">        
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default" id = "sumbit">Submit</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+<div><br><br><br><br><br><br><br><br><br><br><br>
 </div>
-    <table>
-        <h1>Contact Us</h1>
-        <tr>
-            <td>
-                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
-                    <div>
-                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
-                        <input type="text" name="fullName" id="fullName">
-                    </div>
-                    <div>
-                        <label>Email ID</label>
-                        <br>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div>
-                        <label>Address</label>
-                        <input type="text" name="address" id="address">
-                    </div>
-                    <div>
-                        <label>Mobile</label>
-                        <input type="number" name="mobile" id="mobile">
-                    </div>
-                 
-                    <div  class="form-action-buttons">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </td>
-            <td>
-                <table class="list" id="employeeList">
-                    <thead>
-                        <tr>
-                            <th>Full Name</th>
-                            <th>Email ID</th>
-                            <th>Address</th>
-                            <th>Mobile</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </table>
-     
 <footer class="ct-footer">
         <div class="container">
             
@@ -185,8 +192,13 @@
             </div>
     </footer>
     
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+    <!-- FireBase End-->	
     <script src="app.js"></script>
-    <script src="script.js"></script>
+    <script src ="firebase.js"></script>
 </body>
 
 </html>
