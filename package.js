@@ -3,7 +3,6 @@ var email;
 var name;
 var phone;
 
-const hotel_form= document.querySelector('hotel_form');
 
         document.getElementById('submit').addEventListener(
             'click',(e)=>{
@@ -32,10 +31,11 @@ const hotel_form= document.querySelector('hotel_form');
                                             Place : place,
                                             }
                                         ).then(() => {
+                                            
                                             console.log('Done!');
                                             window.location='index.html';
-                                            hotel_form.reset();
                                             alert("your booking has been confirmed");
+                                      
                                             
                                         });
   

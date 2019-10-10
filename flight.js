@@ -36,6 +36,7 @@ const flight_form= document.querySelector('flight_form');
                                 }else{
                                     console.log('user logged out');
                                     window.alert("please log in for booking confirmation");
+                                    
                                     location.href='log.html';
                                  
                                   }
@@ -72,9 +73,10 @@ const flight_form= document.querySelector('flight_form');
                                 }
                 ).then(() => {
                     console.log('Done!');
-                    window.location='index.html';
-                    hotel_form.reset();
                     alert("your booking has been confirmed");
+                    window.location='index.html';
+                    flight_form.reset();
+                
                     
                 });
             });
