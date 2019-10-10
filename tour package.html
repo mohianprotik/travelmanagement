@@ -7,67 +7,86 @@
     <link rel = "stylesheet" href="package.css">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<meta name="viewport" content="width = device-width , initial-scale = 1.0">
-		<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+	<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 
 </head>
 <body>
       
-	<header>
+   
+		<header>
 
-    
-  
-		<div id ="navigation">
-	   
-		<div class="hamburger">
-		  <div class="line"></div>
-		  <div class="line"></div>
-		  <div class="line"></div>
-		</div>
-		<ul class="nav-links">
-			<li><a href="index.html">HOME</a></li>
-			<li  class="active"><a href="#">Tour Packages</a></li>
-			<li><a href="hotel.html">Hotel</a></li>
-			<li><a href="flight.html">Flight</a></li>
-			<div class="dropdown">
-			  <button class="dropbtn">Other Services
-				<i class="fa fa-caret-down"></i>
-			  </button>
-			  <div class="dropdown-content">
-				<a href="c.html">Tour Guide</a>
-				<a href="https://www.google.com/maps">Map</a>
-				
-			  </div>
-			</div> 
-			<li id="Log_in"><a href="log.html">Log in</button></a></li>
+				<div id ="navigation">
+			   
+				<div class="hamburger" id="hamburger">
+				  <div class="line"></div>
+				  <div class="line"></div>
+				  <div class="line"></div>
+				</div>
 		
-			<button type="button" class="btn btn-warning" id = "Log_out" style="display: none">Log Out</button>
-			<li><a href="contact.html">Contact</a></li>
-		 
-		</ul>
-		</div>  
-    </header>
+				<ul class="nav-links" id="nav-links">
+				
+					<li><a href="./index.html">HOME</a></li>
+					<li class="active"><a href="tour package.html">Tour Packages</a></li>
+					<li><a href="hotel.html">Hotel</a></li>
+					<li><a href="flight.html">Flight</a></li>
+					<div class="dropdown">
+						 <button class="dropbtn">Other Services
+						 <i class="fa fa-caret-down"></i>
+						 </button>
+					  <div class="dropdown-content">
+						<a href="c.html">Tour Guide</a>
+						<a href="https://www.google.com/maps">Map</a>
+						
+					  </div>
+					</div> 
+				
+					<li ><a href="log.html" class="btn btn-warning" id="Log_in">Log in</button></a></li>
+				
+					<button type="button" class="btn btn-warning" id = "Log_out" style="display:none">Log Out</button>
+					<li><a href="contact.html">Contact</a></li>
+					<div class="dropdown ">
+						<a href="./settings.html"><button class="dropbtn" id="account">Account
+					
+							<i class="fa fa-fw fa-user"></i>
+						  
+						</button> </a>
+					  </div>
+					
+				 
+				</ul>
+				</div>
+			  
+			  
+			</header>
+			  
 
    	<br>
 			 	<br>  	<br>  	<br>  	<br>  	<br>  
-			 <h1 style="align-content: center"  >TOUR Packages</h1>
-			 
+			 <P  >TOUR PACKAGES</P>
+			 <style>
+				 P{  font-size: 50px;
+					text-align: center;
+					 color: aliceblue;
+				 }
+			 </style>
 			 <br>  
 
    	<div class="container">
   <div class="row">
     <div class="col-12">
-		<table class="table table-image table-dark table-bordered">
+		<table class="table table-image table-dark table-bordered" style="width: 100%">
 		  <thead >
 		    <tr>
           
-		      <th scope="col">PLACE</th>
-		      <th scope="col">DETAILS</th>
-		      <th scope="col">DAYS</th>
-		      <th scope="col">FLIGHT</th>
-		      <th scope="col">HOTEL</th>
-          	  <th scope="col">COST</th>
+		      <th width="20%" scope="col">PLACE</th>
+		      <th width="30%" scope="col">DETAILS</th>
+		      <th width="15%" scope="col">DAYS</th>
+		      <th width="15%" scope="col">FLIGHT</th>
+		      <th width="10%"scope="col">HOTEL</th>
+          	  <th width="10%"scope="col">COST</th>
 		    </tr>
 		  </thead>
 		  <tbody>
@@ -79,9 +98,9 @@
 					<img  src="img/london1.jpg" ; class="img-fluid img-thumbnail" alt="Sheep" >
 		      </td>
              <td><h3>LONDON</h3>Lorem ipsum dolor sit amet consectetur, adipislaborio</td>
-          <td>3 days 2 nights</td>
+          <td>3 days 2 nights </td>
 		      <td>Emirats</td>
-		      <td>decoy STRA</td>
+		      <td>Radison</td>
            <td>230$</td>
 		    </tr>
 		    <tr>
@@ -92,7 +111,7 @@
 		      </td>
              <td> <h3>LOS ANGELES </h3>
 				 Lorem ipsum dolor sit amet consectetur, adipislaborio</td>
-          <td>3 days 2 nights</td>
+          <td >3 days 2 nights </td>
 		      <td>Emirats</td>
 		      <td>PAB STRA</td>
            <td>200$</td>
@@ -104,8 +123,8 @@
 		      </td>
              <td> <h3>PARIS</h3>
 				 Lorem ipsum dolor sit amet consectetur, adipislaborio</td>
-          <td>3 days 2 nights</td>
-		      <td>Emirats</td>
+          <td>3 days </td>
+		      <td>Saudia airways</td>
 		      <td>deMUTA</td>
            <td>250$</td>
 		    </tr>
@@ -115,10 +134,10 @@
 				<img  src="img/russia.jpg" ; class="img-fluid img-thumbnail" alt="Sheep" >
 		      </td>
 			 <td><h3>RUSSIA</h3>
-				RUSSIALorem ipsum dolor sit amet consectetur, adipislaborio DSFSDF SDFSDFWEIEIOF SDFAEDFISDAIJFIADS FSDAFADSFFSDGSFD</td>
-          <td>3 days 2 nights</td>
-		      <td>Emirats</td>
-		      <td>decoy STRA</td>
+				RUSSIALorem ipsum dolor sit amet consectetur, adipislaborio DSFSDF SDFSDFWEIEIOF SDFAEDFISDAIJ</td>
+          <td>3 days</td>
+		      <td>turkey airlines</td>
+		      <td>decoy malaya</td>
            <td>220$</td>
 		    </tr>
 		    <tr>
@@ -126,7 +145,7 @@
 		<a href="paris.html" style="margin-left: -5px;">
 				<img  src="img/swiz.jpg" ; class="img-fluid img-thumbnail" alt="Sheep" >
 		      </td>
-             <td><h3>Switcherland</h3>Lorem ipsum dolor sit amet consectetur, adipislaborio JJNJJFNEWKJNJKNJK SJKDFNKJWENRJJIEWO ADSIFMJLKIDAMFSJK SDFJNKJSDNFK</td>
+             <td><h3>Switcherland</h3>Lorem ipsum dolor sit amet consectetur, adipislaborio JJNJJFNEWKJNJKNJK SJKD</td>
           <td>4 days 3 nights</td>
 		      <td>Emirats</td>
 		      <td> FROSTRA</td>
@@ -137,7 +156,7 @@
 							<td class="w-25">
 											 <img src="img/florence-1066314_1920.jpg" class="img-fluid img-thumbnail" alt="Sheep">
 										 </td>
-										<td><h3>Switcherland</h3>Lorem ipsum dolor sit amet consectetur, adipislaborio JJNJJFNEWKJNJKNJK SJKDFNKJWENRJJIEWO ADSIFMJLKIDAMFSJK SDFJNKJSDNFK</td>
+										<td><h3>Switcherland</h3>Lorem ipsum dolor sit amet consectetur, adipislaborio JJNJJF</td>
 									 <td>4 days 3 nights</td>
 										 <td>Emirats</td>
 										 <td> FROSTRA</td>
@@ -147,7 +166,7 @@
 											<td class="w-25">
 													<img src="img/london3.jpg" class="img-fluid img-thumbnail" alt="Sheep">
 												</td>
-											   <td><h3>Switcherland</h3>Lorem ipsum dolor sit amet consectetur, adipislaborio JJNJJFNEWKJNJKNJK SJKDFNKJWENRJJIEWO ADSIFMJLKIDAMFSJK SDFJNKJSDNFK</td>
+											   <td><h3>Switcherland</h3>Lorem ipsum dolor sit amet consectetur, adipislaborio JJNJJFNE</td>
 											<td>4 days 3 nights</td>
 												<td>Emirats</td>
 												<td> FROSTRA</td>
@@ -162,7 +181,8 @@
     </div>
   </div>
 </div>
- 	<footer class="ct-footer">
+ 	   
+<footer class="ct-footer">
 		<div class="container">
 			
 			<ul class="ct-footer-list text-center-sm">
@@ -171,17 +191,12 @@
 						Learn More
 					</h2>
 					<ul>
-						<li>
-							<a href="#">Company</a>
-						</li>
-						<li>
-							<a href="#">Clients</a>
-						</li>
+					
 						<li>
 							<a href="#features">feature-details</a>
 						</li>
 						<li>
-							<a href = "#gallary">gallary</a>
+							<a href = "#gallary=">gallary</a>
 						</li>
 					</ul>
 				</li>
@@ -190,41 +205,18 @@
 						Services
 					</h2>
 					<ul>
-						<li>
-							<a href="#">tour guides</a>
-						</li>
+					
 						<li>
 							<a href="hotel.html">Hotel</a>
 						</li>
 						<li>
 							<a href="flight.html">Flights</a>
 						</li>
-						<li>
-							<a href="#">Support US</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<h2 class="ct-footer-list-header">
-						Devlopment Team
-					</h2>
-					<ul>
-						<li>
-							<a href="">Thought Leadership</a>
-						</li>
-						
-						<li>
-							<a href="">DESIGNS</a>
-						</li>
-						<li>
-							<a href="">CODE</a>
-						</li>
-						<li>
-							<a href="">COORDINATION</a>
-						</li>
 					
 					</ul>
 				</li>
+		
+	
 			
 				<li>
 					<h2 class="ct-footer-list-header">
@@ -234,26 +226,35 @@
 						<li>
 							<a href="contact.html">FAQ</a>
 						</li>
-						<li>
-							<a href="">Our Board</a>
-						</li>
 					
 						<li>
 							<a href="contact.html">Contact Us</a>
 						</li>
 					</ul>
 				</li>
+				<li>
+					<h2 class="ct-footer-list-header">
+						Copyrigtht
+					</h2>
+					<ul>
+					
+						<li>
+							<a href="#">Protik</a>
+						</li>
+					
+					</ul>
+				</li>
 			</ul>
 			</div>
 	</footer>
-
 	
 	<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
-	<!-- FireBase End-->	
-	<script src="app.js"></script>
+	
 	<script src ="firebase.js"></script>
+	<script src="app.js"></script>
+	
 
       </body>
       </html>

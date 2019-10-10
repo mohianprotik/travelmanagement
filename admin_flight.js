@@ -1,6 +1,6 @@
-console.log('from feedbackjs');
+console.log('from adminflightjs');
 
-db.collection('feedbacks').get().then(snapshot => {
+db.collection('FlightBooking').get().then(snapshot => {
     
     var cnt = 1;
     snapshot.forEach(doc => {
@@ -16,8 +16,14 @@ db.collection('feedbacks').get().then(snapshot => {
             <th scope="row">${cnt++}</th>
             <td>${guide.Name}</td>
             <td>${guide.Email}</td>
-            <td>${guide.Subject}</td>
-            <td>${guide.Comment}</td>
+            <td>${guide.Deperture}</td>
+            <td>${guide.Destination}</td>
+            <td>${guide.DepertingDate}</td>
+            <td>${guide.ReturningDate}</td>
+            <td>${guide.Adult}</td>
+            <td>${guide.Children}</td>
+            <td>${guide.Class}</td>
+
         `;
         table.appendChild(div);
 
@@ -26,10 +32,10 @@ db.collection('feedbacks').get().then(snapshot => {
 
 
     });
-
     
     function myFunction() {
  setTimeout(function(){ location.href = "./index.html"; }, 200);
 }
+
 
 

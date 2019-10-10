@@ -17,9 +17,9 @@
 
 <body>
         <header>
-            <div><br><br><br><br><br><br><br><br>
-            </div> 
-      
+
+    
+  
                 <div id ="navigation">
                
                 <div class="hamburger">
@@ -34,12 +34,11 @@
                     <li><a href="admin_hotel.html">Hotel Booking </a></li>
                     <li><a href="admin_flight.html">Flight Booking</a></li>
                     <li><a href="feedback.html">Customer feedback</a></li>
-                    <li><a href="Customers Info.html">Users Info</a></li>
+                    <li><a href="./Customers Info.html">Users Info</a></li>
                   
-                  
-                    <li><a href="log.html"><button type="button" class="btn btn-warning" id = "Log_in" style="display: none" >Log in</button></a></li>
-		
-			        <button type="button" class="btn btn-warning" id = "Log_out" style="display: none">Log Out</button>
+                    <button onclick="myFunction()"type="button" class="btn btn-warning" id = "Log_out" style="display:none">Log Out</button>
+
+
 			
                  
                 </ul>
@@ -47,7 +46,8 @@
               
               
             </header>
-
+<div><br><br><br><br><br><br><br><br>
+</div> 
 
 <table class="table">
     <thead class="thead-dark">
@@ -55,12 +55,18 @@
         <th scope = "col">Serial</th>
         <th scope="col">Name</th>
         <th scope="col">Email</th>
-        <th scope="col">Subject</th>
-        <th scope="col">Question</th>
+        <th scope="col">Deperture</th>
+        <th scope="col">Destination</th>
+        <th scope="col">Deperture Date</th>
+        <th scope="col">ReturngDate</th>
+        <th scope="col">Adult</th>
+        <th scope="col">Children</th>
+        <th scope="col">Class</th>
       </tr>
     </thead>
     <tbody id = "tbody">
-     
+          
+            
     </tbody>
   </table>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
@@ -68,7 +74,7 @@
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
     
     <script src ="firebase.js"></script><!-- FireBase End-->	
-    <script src="feedback.js"></script>
+    <script src="admin_flight.js"></script>
     
 </body>
 

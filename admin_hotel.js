@@ -1,6 +1,6 @@
-console.log('from feedbackjs');
+console.log('from adminhotel.js');
 
-db.collection('feedbacks').get().then(snapshot => {
+db.collection('HotelBooking').get().then(snapshot => {
     
     var cnt = 1;
     snapshot.forEach(doc => {
@@ -16,8 +16,13 @@ db.collection('feedbacks').get().then(snapshot => {
             <th scope="row">${cnt++}</th>
             <td>${guide.Name}</td>
             <td>${guide.Email}</td>
-            <td>${guide.Subject}</td>
-            <td>${guide.Comment}</td>
+            <td>${guide.Phone}</td>
+            <td>${guide.ArrivalDAte}</td>
+            <td>${guide.DepertureDate}</td>
+            <td>${guide.NoOfGuests}</td>
+            <td>${guide.RoomType}</td>
+         
+
         `;
         table.appendChild(div);
 

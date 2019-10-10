@@ -1,13 +1,14 @@
- #navigation {
+ #navigation{
  
    background: #152753;
   
-  padding: 20px 10px;
+  padding-top:5px ;
   transition: 0.4s;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1;
+  max-height: 90px;
 }
 
 
@@ -190,6 +191,7 @@ a:hover{
 .active 
 {
   background:rgba(49, 143, 146, 0.5);
+  border-radius: 5px;
 
 }
 

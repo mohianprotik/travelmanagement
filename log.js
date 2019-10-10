@@ -1,4 +1,4 @@
-console.log('32 from logjs')
+console.log(' from logjs')
 
 const loginForm = document.querySelector('#login_form');
 loginForm.addEventListener('submit', (e) =>
@@ -13,13 +13,25 @@ loginForm.addEventListener('submit', (e) =>
         
           { 
             console.log(cred.user);
-            if(email== 'admin@gmail.com')
+            if(email== 'admin1@gmail.com')
             {
-                window.location.href = "feedback.html";
+                window.location.href = "./admin.html";
             
             }
-            setTimeout(function(){ loginForm.reset();
-                window.location='index.html'; }, 3000);
+            else if(email =='admin2@gmail.com')
+            {
+                window.location.href = "./admin.html";
+            }
+            else if(email =='admin3@gmail.com')
+            {
+                window.location.href = "./admin.html";
+            }
+            
+            
+            else{
+                window.location='index.html';
+            }
+                
         
         },err=>
         {
@@ -29,7 +41,7 @@ loginForm.addEventListener('submit', (e) =>
                 case "auth/wrong-password":
                     msg = "email or password is incorrect.";
                     loginForm.reset();
-                    console.log('112');
+                    
                     break;
             }
             alert(msg);

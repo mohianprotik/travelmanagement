@@ -1,6 +1,13 @@
-console.log('from feedbackjs');
+console.log('from adminpackage js');
 
-db.collection('feedbacks').get().then(snapshot => {
+
+function myFunction() {
+setTimeout(function(){ location.href = "./index.html"; }, 200);
+}
+
+
+
+db.collection('TourPackage').get().then(snapshot => {
     
     var cnt = 1;
     snapshot.forEach(doc => {
@@ -16,8 +23,8 @@ db.collection('feedbacks').get().then(snapshot => {
             <th scope="row">${cnt++}</th>
             <td>${guide.Name}</td>
             <td>${guide.Email}</td>
-            <td>${guide.Subject}</td>
-            <td>${guide.Comment}</td>
+            <td>${guide.Phone}</td>
+            <td>${guide.Place}</td>
         `;
         table.appendChild(div);
 
@@ -26,10 +33,3 @@ db.collection('feedbacks').get().then(snapshot => {
 
 
     });
-
-    
-    function myFunction() {
- setTimeout(function(){ location.href = "./index.html"; }, 200);
-}
-
-

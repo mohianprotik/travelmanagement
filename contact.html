@@ -8,7 +8,7 @@
     <link rel = "stylesheet" href="footer.css">
 	<link rel = "stylesheet" href="navbar.css">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel = "stylesheet" href="navbar.css">
+	
 	<meta name="viewport" content="width = device-width , initial-scale = 1.0">
 	<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,46 +18,58 @@
 <body>
         <header>
 
-    
-  
-                <div id ="navigation">
-               
-                <div class="hamburger">
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                </div>
-                <ul class="nav-links">
-                    
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="tour package.html">Tour Packages</a></li>
-                    <li><a href="hotel.html">Hotel</a></li>
-                    <li><a href="flight.html">Flight</a></li>
-                    <div class="dropdown">
-                      <button class="dropbtn">Other Services
-                        <i class="fa fa-caret-down"></i>
-                      </button>
-                      <div class="dropdown-content">
-                        <a href="c.html">Tour Guide</a>
-                        <a href="#">Map</a>
-                        
-                      </div>
-                    </div> 
-                  
-                    <li><a href="log.html"><button type="button" class="btn btn-warning" id = "Log_in" style="display: none" >Log in</button></a></li>
+				<div id ="navigation">
+			   
+				<div class="hamburger" id="hamburger">
+				  <div class="line"></div>
+				  <div class="line"></div>
+				  <div class="line"></div>
+				</div>
 		
-			<button type="button" class="btn btn-warning" id = "Log_out" style="display: none">Log Out</button>
-			
-                    <li class="active"><a href="#">Contact</a></li>
-                 
-                </ul>
-                </div>
-              
-              
-            </header>
-<div><br><br><br><br><br><br><br><br>
+				<ul class="nav-links" id="nav-links">
+				
+					<li><a href="./index.html">HOME</a></li>
+					<li><a href="tour package.html">Tour Packages</a></li>
+					<li><a href="hotel.html">Hotel</a></li>
+					<li><a href="flight.html">Flight</a></li>
+					<div class="dropdown">
+						 <button class="dropbtn">Other Services
+						 <i class="fa fa-caret-down"></i>
+						 </button>
+					  <div class="dropdown-content">
+						<a href="c.html">Tour Guide</a>
+						<a href="https://www.google.com/maps">Map</a>
+						
+					  </div>
+					</div> 
+				
+					<li ><a href="log.html" class="btn btn-warning" id="Log_in">Log in</button></a></li>
+				
+					<button type="button" class="btn btn-warning" id = "Log_out" style="display:none">Log Out</button>
+					<li class="active"><a href="contact.html">Contact</a></li>
+					<div class="dropdown ">
+						<a href="./settings.html"><button class="dropbtn" id="account">Account
+					
+							<i class="fa fa-fw fa-user"></i>
+						  
+						</button> </a>
+					  </div>
+					
+				 
+				</ul>
+				</div>
+			  
+			  
+			</header>
+<div><br><br><br><br><br>
 </div> 
 <main>
+    <h1 style="text-align: center">We will be happy to hear from you</h1>
+  <style>
+       h1{
+        color: white;
+    }
+  </style> 
     <div class="container contact">
         <div class="row">
             <div class="col-md-3">
@@ -72,31 +84,31 @@
                     <div class="form-group">
                       <label class="control-label col-sm-2" for="name">Name:</label>
                       <div class="col-sm-10">          
-                        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="fname">
+                        <input type="text" class="form-control" id="contact-name" placeholder="Enter Name" name="fname">
                       </div>
                     </div>
                     
                     <div class="form-group">
                       <label class="control-label col-sm-2" for="email">Email:</label>
                       <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        <input type="email" class="form-control" id="contact-email" placeholder="Enter email" name="email">
                       </div>
                     </div>
                     <div class="form-group">
                             <label class="control-label col-sm-2" for="subject">subject:</label>
                             <div class="col-sm-10">          
-                              <input type="text" class="form-control" id="subject" placeholder="Enter Last Name" name="lname">
+                              <input type="text" class="form-control" id="subject" placeholder="Enter topic name" name="lname">
                             </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-sm-2" for="comment">Comment:</label>
+                      <label class="control-label col-sm-2" for="comment">Query:</label>
                       <div class="col-sm-10">
                         <textarea class="form-control" rows="5" id="comment"></textarea>
                       </div>
                     </div>
                     <div class="form-group">        
                       <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default" id = "sumbit">Submit</button>
+                        <button type="submit" class="btn btn-default" id = "submit">Submit</button>
                       </div>
                     </div>
                 </div>
@@ -107,98 +119,81 @@
 </main>
 <div><br><br><br><br><br><br><br><br><br><br><br>
 </div>
+   
 <footer class="ct-footer">
-        <div class="container">
-            
-            <ul class="ct-footer-list text-center-sm">
-                <li>
-                    <h2 class="ct-footer-list-header">
-                        Learn More
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="#">Company</a>
-                        </li>
-                        <li>
-                            <a href="#">Clients</a>
-                        </li>
-                        <li>
-                            <a href="#features">feature-details</a>
-                        </li>
-                        <li>
-                            <a href = "#gallary">gallary</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2 class="ct-footer-list-header">
-                        Services
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="#">tour guides</a>
-                        </li>
-                        <li>
-                            <a href="hotel.html">Hotel</a>
-                        </li>
-                        <li>
-                            <a href="flight.html">Flights</a>
-                        </li>
-                        <li>
-                            <a href="#">Support US</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2 class="ct-footer-list-header">
-                        Devlopment Team
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="">Thought Leadership</a>
-                        </li>
-                        
-                        <li>
-                            <a href="">DESIGNS</a>
-                        </li>
-                        <li>
-                            <a href="">CODE</a>
-                        </li>
-                        <li>
-                            <a href="">COORDINATION</a>
-                        </li>
-                    
-                    </ul>
-                </li>
-            
-                <li>
-                    <h2 class="ct-footer-list-header">
-                        About
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="contact.html">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="">Our Board</a>
-                        </li>
-                    
-                        <li>
-                            <a href="contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            </div>
-    </footer>
-    
+		<div class="container">
+			
+			<ul class="ct-footer-list text-center-sm">
+				<li>
+					<h2 class="ct-footer-list-header">
+						Learn More
+					</h2>
+					<ul>
+					
+						<li>
+							<a href="#features">feature-details</a>
+						</li>
+						<li>
+							<a href = "#gallary=">gallary</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2 class="ct-footer-list-header">
+						Services
+					</h2>
+					<ul>
+					
+						<li>
+							<a href="hotel.html">Hotel</a>
+						</li>
+						<li>
+							<a href="flight.html">Flights</a>
+						</li>
+					
+					</ul>
+				</li>
+				
+	
+			
+				<li>
+					<h2 class="ct-footer-list-header">
+						About
+					</h2>
+					<ul>
+						<li>
+							<a href="contact.html">FAQ</a>
+						</li>
+					
+						<li>
+							<a href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2 class="ct-footer-list-header">
+						Copyrigtht
+					</h2>
+					<ul>
+					
+						<li>
+							<a href="#">Protik</a>
+						</li>
+					
+					</ul>
+				</li>
+			</ul>
+			</div>
+	</footer>
+
 
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
-    <!-- FireBase End-->	
-    <script src="app.js"></script>
-    <script src ="firebase.js"></script>
+    
+    <script src ="firebase.js"></script><!-- FireBase End-->	
+    <script src="contact.js"></script>
+    
 </body>
 
 </html>

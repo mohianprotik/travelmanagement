@@ -1,6 +1,6 @@
-console.log('from feedbackjs');
+console.log('from customersinfo.js');
 
-db.collection('feedbacks').get().then(snapshot => {
+db.collection('info').get().then(snapshot => {
     
     var cnt = 1;
     snapshot.forEach(doc => {
@@ -16,8 +16,13 @@ db.collection('feedbacks').get().then(snapshot => {
             <th scope="row">${cnt++}</th>
             <td>${guide.Name}</td>
             <td>${guide.Email}</td>
-            <td>${guide.Subject}</td>
-            <td>${guide.Comment}</td>
+            <td>${guide.Phone}</td>
+            <td>${guide.Address}</td>
+            <td>${guide.Country}</td>
+            <td>${guide.Occupation}</td>
+            <td>${guide.ZipCode}</td>
+         
+
         `;
         table.appendChild(div);
 
@@ -26,7 +31,6 @@ db.collection('feedbacks').get().then(snapshot => {
 
 
     });
-
     
     function myFunction() {
  setTimeout(function(){ location.href = "./index.html"; }, 200);

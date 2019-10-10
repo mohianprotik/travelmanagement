@@ -22,43 +22,52 @@
   </style>
 </head>
 <body>
-        
-    	<header>
+    <header>
 
-                <div id ="navigation">
-               
-                <div class="hamburger">
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                </div>
-                <ul class="nav-links">
-                
-                    <li ><a href="index.html">HOME</a></li>
-                    <li class="active"> <a href="tour package.html">Tour Packages</a></li>
-                    <li><a href="hotel.html">Hotel</a></li>
-                    <li><a href="flight.html">Flight</a></li>
-                    <div class="dropdown">
-                      <button class="dropbtn">Other Services
-                        <i class="fa fa-caret-down"></i>
-                      </button>
-                      <div class="dropdown-content">
-                        <a href="c.html">Tour Guide</a>
-                        <a href="https://www.google.com/maps">Map</a>
-                        
-                      </div>
-                    </div> 
-                
-                    <li id="Log_in"><a href="log.html">Log in</button></a></li>
-		
-                    <button type="button" class="btn btn-warning" id = "Log_out" style="display: none">Log Out</button>
-                    <li><a href="contact.html">Contact</a></li>
-                 
-                </ul>
-                </div>
+        <div id ="navigation">
+         
+        <div class="hamburger" id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+    
+        <ul class="nav-links" id="nav-links">
+        
+          <li><a href="./index.html">HOME</a></li>
+          <li class="active"><a href="tour package.html">Tour Packages</a></li>
+          <li><a href="hotel.html">Hotel</a></li>
+          <li><a href="flight.html">Flight</a></li>
+          <div class="dropdown">
+               <button class="dropbtn">Other Services
+             <i class="fa fa-caret-down"></i>
+               </button>
+            <div class="dropdown-content">
+            <a href="c.html">Tour Guide</a>
+            <a href="https://www.google.com/maps">Map</a>
+            
+            </div>
+          </div> 
+        
+          <li ><a href="log.html" class="btn btn-warning" id="Log_in">Log in</button></a></li>
+        
+          <button type="button" class="btn btn-warning" id = "Log_out" style="display:none">Log Out</button>
+          <li><a href="contact.html">Contact</a></li>
+          <div class="dropdown ">
+            <a href="./settings.html"><button class="dropbtn" id="account">Account
+					
+              <i class="fa fa-fw fa-user"></i>
               
-              
-            </header>
+            </button> </a>
+            </div>
+          
+         
+        </ul>
+        </div>
+        
+        
+      </header>
+        
             <br> <br><br><br><br><br>
 <div class="container mt-3">
 
@@ -95,7 +104,7 @@
 
 </div>
 </div>
-<h1 style="text-align: center">PARIS </h1>
+<p >  <h1 style="text-align: center" id="place" >PARIS </h1> </p>
 
 <table class="table">
        
@@ -103,25 +112,29 @@
 
             <h2 style="margin-top: 60px;text-align: center">DETAILS</h2>
           <tr>
-            <th scope="row"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero debitis aspernatur eius sed, voluptatem quaerat culpa nobis sint aperiam quisquam rerum ullam aliquam earum sequi quae quas hic dolorem commodi!</h3>
+            <th></th><th></th><th></th><th></th><th></th>
+            <th scope="row" ><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero debitis aspernatur eius sed, voluptatem quaerat culpa nobis sint aperiam quisquam rerum ullam aliquam earum sequi quae quas hic dolorem commodi!</h3>
             <br> <br><h2>PRICE : 390$</h2><br> <h2>HOTEL : CHEAP HOTEL</h2><br>  <h2>AIRLINES : CHEAT AIRLINES</h2><br> <h2>2 days and 1 night</h2> <br> <h2>LOCAL GUIDE : RAOM</h2> <br><h2>
-            Contact : 24356789 </h2>
-</th>
+            Contact : 24356789 </h2> 
+          </th>
+          <th></th><th></th><th></th>
            
           </tr>
          
         </tbody>
 </table>
 
-<table class="table">
+<table class="table ">
        
         <tbody>
 
             <h2 style="margin-top: 60px; text-align: center">BOOKING CONFIRMATION</h2>
           <tr>
+              <th></th><th></th><th></th><th></th><th></th>
             <th scope="row"><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptates omnis suscipit cupiditate voluptas nam et, soluta dolore eveniet eligendi est ipsum, reiciendis sunt consequatur! Nesciunt molestias ab non consequatur.</h3>
+            
             </th>
-           
+            <th></th><th></th><th></th>
           </tr>
          
         </tbody>
@@ -132,9 +145,10 @@
 
             <h2 style="margin-top: 60px; text-align: center">TERMS AND REGULATION</h2>
           <tr>
+              <th></th><th></th><th></th><th></th><th></th>
             <th scope="row"><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptates omnis suscipit cupiditate voluptas nam et, soluta dolore eveniet eligendi est ipsum, reiciendis sunt consequatur! Nesciunt molestias ab non consequatur.</h3>
             </th>
-           
+            <th></th><th></th><th></th><th></th><th></th>
           </tr>
          
          
@@ -142,100 +156,107 @@
         
 </table>
 
+<tr> <th> </th></tr>
+<div class="container">
+  <div class="row">
+    <div class="col-5"></div>
+    <div class="col-3 ml-4">
+    <button type="button" class="btn btn-warning "  id="submit" >I agree to journey with you.</button>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
+      
 
-        <button type="button" class="btn btn-success btn-lg btn-block"style="margin-top:-50px;" id="submit" >I agree to journey with you.</button>
-
-<footer class="ct-footer">
-        <div class="container">
-            
-            <ul class="ct-footer-list text-center-sm">
-                <li>
-                    <h2 class="ct-footer-list-header">
-                        Learn More
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="#">Company</a>
-                        </li>
-                        <li>
-                            <a href="#">Clients</a>
-                        </li>
-                        <li>
-                            <a href="#features">feature-details</a>
-                        </li>
-                        <li>
-                            <a href = "#gallary">gallary</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2 class="ct-footer-list-header">
-                        Services
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="#">tour guides</a>
-                        </li>
-                        <li>
-                            <a href="hotel.html">Hotel</a>
-                        </li>
-                        <li>
-                            <a href="flight.html">Flights</a>
-                        </li>
-                        <li>
-                            <a href="#">Support US</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2 class="ct-footer-list-header">
-                        Devlopment Team
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="">Thought Leadership</a>
-                        </li>
-                        
-                        <li>
-                            <a href="">DESIGNS</a>
-                        </li>
-                        <li>
-                            <a href="">CODE</a>
-                        </li>
-                        <li>
-                            <a href="">COORDINATION</a>
-                        </li>
-                    
-                    </ul>
-                </li>
-            
-                <li>
-                    <h2 class="ct-footer-list-header">
-                        About
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="contact.html">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="">Our Board</a>
-                        </li>
-                    
-                        <li>
-                            <a href="contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            </div>
-    </footer>
     
-    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+<footer class="ct-footer">
+    <div class="container">
+      
+      <ul class="ct-footer-list text-center-sm">
+        <li>
+          <h2 class="ct-footer-list-header">
+            Learn More
+          </h2>
+          <ul>
+          
+            <li>
+              <a href="#features">feature-details</a>
+            </li>
+            <li>
+              <a href = "#gallary=">gallary</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="ct-footer-list-header">
+            Services
+          </h2>
+          <ul>
+          
+            <li>
+              <a href="hotel.html">Hotel</a>
+            </li>
+            <li>
+              <a href="flight.html">Flights</a>
+            </li>
+          
+          </ul>
+        </li>
+        <li>
+          <h2 class="ct-footer-list-header">
+            Devlopment Team
+          </h2>
+          <ul>
+          
+            <li>
+              <a href="#">DESIGNS</a>
+            </li>
+            <li>
+              <a href="#">CODE</a>
+            </li>
+          
+          </ul>
+        </li>
+  
+      
+        <li>
+          <h2 class="ct-footer-list-header">
+            About
+          </h2>
+          <ul>
+            <li>
+              <a href="contact.html">FAQ</a>
+            </li>
+          
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="ct-footer-list-header">
+            Copyrigtht
+          </h2>
+          <ul>
+          
+            <li>
+              <a href="#">Protik</a>
+            </li>
+          
+          </ul>
+        </li>
+      </ul>
+      </div>
+  </footer>
+  
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
 <!-- FireBase End-->	
-<script src="app.js"></script>
 <script src ="firebase.js"></script>
+<script src="app.js"></script>
+<script src ="package.js"></script>
+
 <script>
 $(document).ready(function(){
   // Activate Carousel
@@ -263,7 +284,7 @@ $(document).ready(function(){
   });
 });
 </script>
-<script src ="submit.js"></script>
+
 
 </body>
 </html>

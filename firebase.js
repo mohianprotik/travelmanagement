@@ -8,7 +8,7 @@ var firebaseConfig = {
     appId: "1:215434834839:web:0bb16c9bfba4ef594fcad2",
     measurementId: "G-E9JZRP5NDQ"
   };
-  // Initialize Firebase
+  
   firebase.initializeApp(firebaseConfig);
 
 const auth = firebase.auth();
@@ -18,15 +18,18 @@ auth.onAuthStateChanged(user =>
   {
     if(user)
     {
-      console.log('user logged in :',user);
-      document.getElementById("Log_out").style.display = "initial";
+      console.log('user log in :',user);
+      document.getElementById("Log_out").style.display = "block";
       document.getElementById("Log_in").style.display = "none";
+      document.getElementById("account").style.display = "block";
+
       localStorage.setItem('logged','yes');
     }
     else{
-      console.log('user logged out');
+      console.log('user log out');
       document.getElementById("Log_out").style.display = "none";
       document.getElementById("Log_in").style.display = "block";
+      document.getElementById("account").style.display = "none";
       localStorage.setItem('logged','no');
     }
   })
