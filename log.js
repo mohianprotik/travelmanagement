@@ -3,9 +3,6 @@ console.log(' from logjs')
 const loginForm = document.querySelector('#login_form');
 loginForm.addEventListener('submit', (e) =>
 {   e.preventDefault();
-
-
-
     const email = loginForm['InputEmail'].value;
     const password = loginForm['InputPassword'].value;
 
