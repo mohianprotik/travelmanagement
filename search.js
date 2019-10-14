@@ -5,11 +5,13 @@
 document.getElementById('search').addEventListener(
     'click',(e)=>{
         e.preventDefault();
-        var v= document.getElementById("khoj").value;    
-        var w ='paris';
-        var k ='los angels' ;
-        var f = 'russia';
-        var q = 'london';
+        var ss= document.getElementById("khoj").value;   
+        v=ss.toUpperCase(); 
+        var w ='PARIS';
+        var k ='LOS ANGELS' ;
+        var f = 'RUSSIA';
+        var q = 'LONDON';
+        var d ='LOSANGELES'
  
         if(v== w)
         { console.log(v);
@@ -20,6 +22,9 @@ document.getElementById('search').addEventListener(
         }
         else if(v ==f) {
             location.href ="./russia.html";
+        }
+        else if(v ==d) {
+            location.href ="./las angels.html";
         }
         else if(v ==q) {
             location.href ="./london.html";

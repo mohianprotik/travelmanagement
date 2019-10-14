@@ -25,8 +25,8 @@ firebase.auth().onAuthStateChanged((user) =>
                 if (user.email == doc.data().Email) {
                     console.log('23');
                     console.log(doc.data().Email);
-                    document.getElementById("contact-email").innerHTML= doc.data().Email;
-                    document.getElementById("contact-email").innerHTML = user.Email;
+                    document.getElementById("contact-email").value= doc.data().Email;
+                    document.getElementById("contact-name").value = doc.data().Name;
                    
                 }
             });
